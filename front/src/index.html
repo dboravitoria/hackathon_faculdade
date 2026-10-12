@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Disciplinas</title>
+</head>
+
+<body>
+    <h1>Informações das Disciplinas</h1>
+
+    <form id="formulario" onsubmit="enviar(event)">
+
+        <fieldset>
+
+            <!-- <div class="section">
+                <label for="dia_semana">Dia da Semana:</label>
+                <select name="dia_semana" id="dia_semana">
+                    <option value="segunda">Segunda</option>
+                    <option value="terca">Terça</option>
+                    <option value="quarta">Quarta</option>
+                    <option value="quinta">Quinta</option>
+                    <option value="sexta">Sexta</option>
+                </select>
+            </div> -->
+
+            
+
+            <div class="section">
+                <label for="cod_disciplina">Cód. da Disciplina:</label>
+                <input type="text" name="cod" id="cod_disciplina">
+            </div>
+            <div class="section">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="section">
+                <label for="periodo">Período:</label>
+                <input type="text" name="periodo" id="periodo">
+            </div>
+
+            <div class="section">
+                <label for="nota">Nota:</label>
+                <input type="number" name="nota" id="nota" min="0" max="10" step="0.1">
+            </div>
+
+            <div class="section">
+                <label for="frequencia">Frequência:</label>
+                <input type="text" name="frequencia" id="frequencia">
+            </div>
+
+            <div class="section">
+                <label for="professor">Professor:</label>
+                <input type="text" name="professor" id="professor">
+            </div>
+            <button type="submit" class="btn">
+                Enviar
+            </button>
+
+        </fieldset>
+
+    </form>
+
+    <section class="table-container">
+
+    <h2>Disciplinas Cadastradas</h2>
+
+    <table id="disciplinas_cadastradas">
+        <thead>
+            <tr>
+                <!-- <th>Dia</th> -->
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Período</th>
+                <th>Nota</th>
+                <th>Frequência</th>
+                <th>Professsor</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+    </table>
+
+</section>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fa;
+    padding: 3rem 1rem;
+    color: #263238;
+}
+h1 {
+    color: #023047;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* FORMULÁRIO */
+
+form {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(2, 48, 71, 0.08);
+}
+fieldset {
+    border: 1px solid #023047;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+.section label {
+    color: #023047;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.section input, .section select {
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid #cbd5dc;
+    border-radius: 7px;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+}
+.section input:hover, .section select:hover {
+    border-color: #219ebc;
+}
+.section input:focus, .section select:focus {
+    outline: none;
+    border-color: #219ebc;
+    box-shadow: 0 0 0 3px rgba(33, 158, 188, 0.15);
+}
+.btn {
+    display: block;
+    margin: 0.5rem auto 0;
+    background-color: #023047;
+    border: none;
+    border-radius: 7px;
+    padding: 0.75rem 1.8rem;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.btn:hover {
+    background-color: #219ebc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(2, 48, 71, 0.2);
+}
+
+/* TABELA */
+
+.table-container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 2.5rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(2, 48, 71, 0.08);
+}
+.table-container h2 {
+    color: #023047;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-size: 1.3rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid #e1e7eb;
+    border-radius: 8px;
+}
+thead {
+    background-color: #023047;
+    color: #ffffff;
+}
+th {
+    padding: 0.9rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+}
+td {
+    padding: 0.85rem 0.8rem;
+    color: #37474f;
+    font-size: 0.9rem;
+    text-align: center;
+    border-bottom: 1px solid #e8edf0;
+}
+tbody tr:hover {
+    background-color: #cbd5dc;
+    transition: 0.2s ease;
+}
